@@ -11,6 +11,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack(spacing: 20) {
+            
             Text("Circular Shapes")
                 .font(.largeTitle)
             
@@ -19,7 +20,7 @@ struct ContentView: View {
                 .foregroundColor(.gray)
             
             Text("There are three circular shapes availbale in SwiftUI:")
-            
+            Divider().background(Color.orange)
             Text("Circle")
             Circle().padding()
             
