@@ -10,7 +10,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        VStack(spacing: 20) {
+            Text("Circular Shapes")
+                .font(.largeTitle)
+            
+            Text("Introduction")
+                .font(.title)
+                .foregroundColor(.gray)
+            
+            Text("There are three circular shapes availbale in SwiftUI:")
+            
+            Text("Circle")
+            Circle().padding()
+            
+            Text("Capsule")
+            Capsule().padding()
+            
+            Text("Ellipse")
+            Ellipse().padding()
+        }.font(.title)
     }
 }
 
